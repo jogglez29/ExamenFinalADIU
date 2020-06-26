@@ -1,33 +1,64 @@
 <style type="text/css">
     @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    @media screen and(max-width: 1000px;) {
+        .card{
+            width: 40%;
+        }
+    }
     .cuartaCapa{
+        margin: 0px;
+        padding: 0px;
         color: rgb(15,102,192);
         background-color: white;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 5%;
+        padding-left: 5%;
+        font-size: 25px;
+    }
+    .cuartaCapa p{
+        padding-right: 0px;
     }
     .quintaCapa{
+        margin: 0px;
+        padding: 0px;
         color: rgb(15,102,192);
         background-color: rgb(0, 100, 195);
         padding-top: 20px;
         padding-bottom: 20px;
+        padding-right: 10%;
+        padding-left: 10%;
     }
-    .cuartaCapa h2,.quintaCapa h1{
+    .cuartaCapa h2,.quintaCapa h2{
         font-family: 'Press Start 2P', cursive;
-        text-shadow: 4px 4px 0 rgb(0,0,0);
-    }
-    .quintaCapa h1{        
         text-shadow: 3px 3px 0 rgb(0,0,0);
-        font-size: x-large;
+        padding-bottom: 20px;
+        font-size: 24px; 
     }
-    .quintaCapa h1{
+    .quintaCapa h2{
         color: rgb(255,255,255);
         margin-bottom: 25px;
     }
     .quintaCapa .card{
-        border:5px solid rgb(0, 69, 145);
+        border:5px solid rgb(0, 52, 110);
         font-weight: bold;
         margin-bottom: 25px;
     }
-
+    .quintaCapa .precio{
+        color: rgb(255, 0, 0);
+    }
+    .quintaCapa .rebaja{
+        color: rgb(0, 0, 0);
+    }
+    .quintaCapa h2::before{
+        content: "";
+        display: inline-block;
+        width: 60px;
+        height: 5px;
+        background: rgb(255,221,69);
+        position: absolute;
+        margin-top: 40px;
+        box-shadow: 5px 5px 0px 0px rgb(0,0,0);
+    }
 </style>
