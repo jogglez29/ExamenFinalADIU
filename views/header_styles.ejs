@@ -2,13 +2,15 @@
 <style type="text/css">
   .primeraCapa{
     text-align: center;
+    width: 100vw;
+    margin: auto;
     overflow: hidden;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     background-color: rgb(0, 100, 195);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   .primeraCapa a{
     color: #fff;
@@ -38,11 +40,63 @@
     left: 0; 
   }
 
- .segundaCapa{
+  .segundaCapa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px 5%;
     background-color: rgb(0, 69, 145);
-    padding-top: 15px;
-    padding-bottom: 15px;
+    overflow: hidden;
   }
+
+  .segundaCapa ul, li, a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .segundaCapa ul{
+    list-style: none;
+  }
+
+  .segundaCapa li{
+    display: inline-block;
+    padding: 0px 5px;
+  }
+
+  .segundaCapa a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+  }
+  .segundaCapa a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #ffea00;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .segundaCapa a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+
+
+
   .terceraCapa{
     background-color: rgb(0, 52, 110);
     padding-top: 15px;
