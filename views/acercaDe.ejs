@@ -8,8 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style type="text/css">
-    
-      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+     @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
       html, body{
         height: 100%;
       }
@@ -32,7 +31,6 @@
     <!--ESTILOS-->
 
     <%- include("header_styles") -%>
-    <%- include("center_styles") -%>
     <%- include("footer_styles") -%>
 
     <!--ESTILOS-->
@@ -41,27 +39,22 @@
   </head>
   <body style="background-color: rgb(0, 100, 195);">
     <div id="page-container">
-      <div id="content-wrap">
-        <!--HEADER -->
-          <%- include('header') -%>
-        <!--HEADER-->
-    
-        <!--CENTRO-->
-          <%- include('center') -%>
-        <!--CENTRO-->
-        
+        <div id="content-wrap">
+          <!--HEADER -->
+            <%- include('header') -%>
+          <!--HEADER-->
+
+          <!--CENTRO-->
+
+          <!--CENTRO-->
+        </div>
+        <footer id="footer">
+           <!--FOOTER-->
+            <%- include('footer') -%>
+           <!--FOOTER-->
+        </footer>
       </div>
-      <footer id="footer">
-         <!--FOOTER-->
-          <%- include('footer') -%>
-         <!--FOOTER-->
-      </footer>
-    </div>
-   
-
-
-
-   
+ 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
